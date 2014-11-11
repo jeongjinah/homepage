@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>casting</title>
+	<style>
+      *{font-family:malgun gothic;
+        line-height:160%;}
+      
+		.allbox {
+			width: 1000px;
+			height: 1140px;
+			border-style: solid;
+			border-top-width: 30px;
+			border-bottom-width: 30px;
+			border-right-width: 30px;
+			border-left-width: 30px;
+			border-color: #DB1F27;
+			background-color: #791414;
+          margin:auto;
+		}
+		.all2box {
+			width: 970px;
+			height: 1110px;
+			background-color: #f8cae2;
+			margin-left: 15px;
+			margin-top: 15px;
+		}
+		.menubar {
+			width: 100px;
+			height: 300px;
+			background-color: #DB1F27;
+			margin-left: 30px;
+			float: left;
+			position: absolute;
+		}
+		.hotelbox{
+			width: 600px;
+			height: 170px;
+			background-color: black;
+			margin-left: 185px;
+		}
+      
+      .fmenu {position:absolute;
+          margin-left:22px;
+          margin-top:15px;
+              color:white;}
+      
+      
+        .menu {position:absolute;
+          margin-left:15px;
+          margin-top:15px;
+              color:white;}
+      
+        #big {width:510px;
+            margin-left:45px;
+            margin-top:11px;}
+      
+      
+		#fst_menu {
+			width: 80px;
+			height: 60px;
+			background-color: #791414;
+			margin-left: 7px;
+			margin-top: 10px;
+			border-style: solid;
+			border-color: #DB1F27;
+			border-top-width: 20px;
+		}
+		#snd_menu {
+			width: 80px;
+			height: 60px;
+			background-color: #791414;
+			margin-left: 7px;
+			margin-top: 10px;
+			border-style: solid;
+			border-color: #DB1F27;
+			border-top-width: 28px;
+		}
+		#trd_menu {
+			width: 80px;
+			height: 60px;
+			background-color: #791414;
+			margin-left: 7px;
+			margin-top: 10px;
+			border-style: solid;
+			border-color: #DB1F27;
+			border-top-width: 28px;
+		}
+
+         h1 {margin-left:190px;
+          color:brown;
+          font-size:22px;}
+      
+		#peoplebox1 {
+			width: 90px;
+			height: 120px;
+			background-image:url('https://googledrive.com/host/0B_i-IWbNz6vmdUliWUVETDJscWs/one.png');
+			border-style: solid;
+			border-color: #DB1F27;
+			border-width: 15px;
+			margin-left: 185px;
+			margin-top: 10px;
+			
+          position: absolute;}
+
+          #peoplestory1
+      {font-size:14px;
+        position:absolute;
+        margin-left:315px;
+      margin-top:20px;}
+      
+      #peoplestory11
+      {font-size:14px;
+        position:absolute;
+        margin-left:315px;
+      margin-top:40px;}
+      
+      #peoplestory12
+      {font-size:14px;
+        position:absolute;
+        margin-left:315px;
+      margin-top:60px;
+       color:brown;}
+
+		
+		#peoplebox2 {
+			width: 90px;
+			height: 120px;
+			background-image:url('https://googledrive.com/host/0B_i-IWbNz6vmdUliWUVETDJscWs/zzz.png');
+			border-style: solid;
+			border-color: #DB1F27;
+			border-width: 15px;
+			margin-left: 420px;
+			margin-top: 10px;
+			
+			position: absolute;
+		}
+      
+       #peoplestory2
+      {font-size:14px;
+        position:absolute;
+        margin-left:550px;
+      margin-top:20px;}
+      
+      #peoplestory21
+      {font-size:14px;
+        position:absolute;
+        margin-left:550px;
+      margin-top:40px;}
+      
+      #peoplestory22
+      {font-size:14px;
+        position:absolute;
+        margin-left:550px;
+      margin-top:60px;
+       color:brown;}
+      
+      
+      
+		#peoplebox3 {
+			width: 90px;
+			height: 120px;
+			background-image:url('https://googledrive.com/host/0B_i-IWbNz6vmdUliWUVETDJscWs/ewfwefw.png');
+			border-style: solid;
+			border-color: #DB1F27;
+			border-width: 15px;
+			margin-left: 665px;
+			margin-top: 10px;
+			
+			position: absolute;
+		}
+      
+       #peoplestory3
+      {font-size:14px;
+        position:absolute;
+        margin-left:800px;
+      margin-top:20px;}
+      
+      #peoplestory31
+      {font-size:14px;
+        position:absolute;
+        margin-left:800px;
+      margin-top:40px;}
+      
+      #peoplestory32
+      {font-size:14px;
+        position:absolute;
+        margin-left:800px;
+      margin-top:60px;
+       color:brown;}
+
+		#peoplebox4 {
+			width: 90px;
+			height: 120px;
+			background-image:url('https://googledrive.com/host/0B_i-IWbNz6vmdUliWUVETDJscWs/fsdfwe.png');
+			border-style: solid;
+			border-color: #DB1F27;
+			border-width: 15px;
+			margin-left: 185px;
+			margin-top: 200px;
+
+			position: absolute;
+		}
+      
+       #peoplestory4
+      {font-size:14px;
+        position:absolute;
+        margin-left:315px;
+      margin-top:210px;}
+      
+      #peoplestory41
+      {font-size:14px;
+        position:absolute;
+        margin-left:315px;
+      margin-top:230px;}
+      
+      #peoplestory42
+      {font-size:14px;
+        position:absolute;
+        margin-left:315px;
+      margin-top:250px;
+       color:brown;}
+      
+      
+		#peoplebox5 {
+			width: 90px;
+			height: 120px;
+			background-image:url('https://googledrive.com/host/0B_i-IWbNz6vmdUliWUVETDJscWs/zdsf.png');
+			border-style: solid;
+			border-color: #DB1F27;
+			border-width: 15px;
+			margin-left: 420px;
+			margin-top: 200px;
+			
+			position: absolute;
+		}
+      
+       #peoplestory5
+      {font-size:14px;
+        position:absolute;
+        margin-left:550px;
+      margin-top:210px;}
+      
+      #peoplestory51
+      {font-size:14px;
+        position:absolute;
+        margin-left:550px;
+      margin-top:230px;}
+      
+       #peoplestory52
+      {font-size:14px;
+        position:absolute;
+        margin-left:550px;
+      margin-top:250px;
+       color:brown;}
+      
+      
+		#peoplebox6 {
+			width: 90px;
+			height: 120px;
+			background-image:url('https://googledrive.com/host/0B_i-IWbNz6vmdUliWUVETDJscWs/ewfwef.png');
+			border-style: solid;
+			border-color: #DB1F27;
+			border-width: 15px;
+			margin-left: 665px;
+			margin-top: 200px;
+        
+			position: absolute;
+		}
+      
+       #peoplestory6
+      {font-size:14px;
+        position:absolute;
+        margin-left:800px;
+      margin-top:210px;}
+      
+      #peoplestory61
+      {font-size:14px;
+        position:absolute;
+        margin-left:800px;
+      margin-top:230px;
+      }
+      
+      #peoplestory62
+      {font-size:14px;
+        position:absolute;
+        margin-left:800px;
+      margin-top:250px;
+       color:brown;}
+      
+      a:link {text-decoration: none; color:white;}
+      a:visited {text-decoration: none; color:white;}	
+      
+      #super {margin-top:430px;}
+      
+      #superp {margin-left:190px;
+              font-size:15px;
+              }
+      
+      #pro {margin-top:50px;}
+      
+      .pro {float:left;}
+      
+      .con {margin-left:190px;}
+      .contwo {margin-left:190px;
+              margin-top:30px;}
+      .content {margin-left:190px;
+        line-height:100%;
+        font-size:13px;
+      }
+      
+          @media screen and (max-width:320px)
+        {.allbox
+          {width: 290px;
+			height: 1770px;
+			border-style: solid;
+			border-top-width: 15px;
+			border-bottom-width: 15px;
+			border-right-width: 15px;
+			border-left-width: 15px;
+			border-color: #DB1F27;
+			background-color: #791414;
+			}
+          
+          .all2box {
+			width: 270px;
+			height:1750px;
+			background-color: #f8cae2;
+			margin-left: 9px;
+			margin-top: 9px;}
+          
+          .menubar {
+			width: 250px;
+			height: 60px;
+			background-color: #DB1F27;
+			margin-left: 10px;
+            margin-top:10px;
+			float: left;}
+		
+		.hotelbox{
+			width: 270px;
+			height: 100px;
+			background-color: black;
+			margin-left: 0px;} 
+          
+      .story {margin: 10px;}
+      
+       .fmenu { position:absolute;
+          margin-left:13px;
+          margin-top:6px;
+         font-size:14px;
+              color:white;}
+      
+      .menu {position:absolute;
+          margin-left:8px;
+          margin-top:6px;
+        font-size:14px;
+              color:white;}
+      
+		#fst_menu {
+			width: 60px;
+			height: 40px;
+			background-color: #791414;
+			margin-left: 13px;
+			margin-top: 0px;
+			border-style: solid;
+			border-color: #DB1F27;
+			border-top-width: 10px;
+            position: absolute;
+		}
+          
+      #snd_menu {
+			width:60px;
+			height: 40px;
+			background-color: #791414;
+			margin-left: 90px;
+			margin-top: 0px;
+			border-style: solid;
+			border-color: #DB1F27;
+			border-top-width: 10px;
+            position: absolute;
+		}
+          
+		#trd_menu {
+			width: 60px;
+			height: 40px;
+			background-color: #791414;
+			margin-left: 170px;
+			margin-top: 0px;
+			border-style: solid;
+			border-color: #DB1F27;
+			border-top-width: 10px;
+            position: absolute;
+		}
+      
+      #big {width:260px;
+            margin-left:5px;
+            margin-top:13px;}
+          
+
+      
+     
+          h1 {margin-left:10px;
+           margin-top:80px;
+          color:brown;
+          font-size:15px;}
+      
+		#peoplebox1 {
+			width: 90px;
+			height: 120px;
+			background-image:url('https://googledrive.com/host/0B_i-IWbNz6vmdUliWUVETDJscWs/one.png');
+			border-style: solid;
+			border-color: #DB1F27;
+			border-width: 15px;
+			margin-left: 10px;
+			margin-top: 5px;
+			
+          position: absolute;}
+
+          #peoplestory1
+      {font-size:13px;
+        position:absolute;
+        margin-left:150px;
+      margin-top:40px;}
+      
+      #peoplestory11
+      {font-size:13px;
+        position:absolute;
+        margin-left:150px;
+      margin-top:60px;}
+      
+      #peoplestory12
+      {font-size:13px;
+        position:absolute;
+        margin-left:150px;
+      margin-top:85px;
+       color:brown;}
+
+		
+		#peoplebox2 {
+			width: 90px;
+			height: 120px;
+			background-image:url('https://googledrive.com/host/0B_i-IWbNz6vmdUliWUVETDJscWs/zzz.png');
+			border-style: solid;
+			border-color: #DB1F27;
+			border-width: 15px;
+			margin-left: 10px;
+			margin-top: 170px;
+			
+			position: absolute;
+		}
+      
+       #peoplestory2
+      {font-size:13px;
+        position:absolute;
+        margin-left:150px;
+      margin-top:214px;}
+      
+      #peoplestory21
+      {font-size:13px;
+        position:absolute;
+        margin-left:150px;
+      margin-top:234px;}
+      
+      #peoplestory22
+      {font-size:13px;
+        position:absolute;
+        margin-left:150px;
+      margin-top:258px;
+       color:brown;}
+      
+      
+      
+		#peoplebox3 {
+			width: 90px;
+			height: 120px;
+			background-image:url('https://googledrive.com/host/0B_i-IWbNz6vmdUliWUVETDJscWs/ewfwefw.png');
+			border-style: solid;
+			border-color: #DB1F27;
+			border-width: 15px;
+			margin-left: 10px;
+			margin-top: 335px;
+			
+			position: absolute;
+		}
+      
+       #peoplestory3
+      {font-size:13px;
+        position:absolute;
+        margin-left:150px;
+      margin-top:370px;}
+      
+      #peoplestory31
+      {font-size:13px;
+        position:absolute;
+        margin-left:150px;
+      margin-top:390px;}
+      
+      #peoplestory32
+      {font-size:13px;
+        position:absolute;
+        margin-left:150px;
+      margin-top:418px;
+       color:brown;}
+
+		#peoplebox4 {
+			width: 90px;
+			height: 120px;
+			background-image:url('https://googledrive.com/host/0B_i-IWbNz6vmdUliWUVETDJscWs/fsdfwe.png');
+			border-style: solid;
+			border-color: #DB1F27;
+			border-width: 15px;
+			margin-left: 10px;
+			margin-top: 500px;
+
+			position: absolute;
+		}
+      
+       #peoplestory4
+      {font-size:13px;
+        position:absolute;
+        margin-left:150px;
+      margin-top:540px;}
+      
+      #peoplestory41
+      {font-size:13px;
+        position:absolute;
+        margin-left:150px;
+      margin-top:560px;}
+      
+      #peoplestory42
+      {font-size:13px;
+        position:absolute;
+        margin-left:150px;
+      margin-top:584px;
+       color:brown;}
+      
+      
+		#peoplebox5 {
+			width: 90px;
+			height: 120px;
+			background-image:url('https://googledrive.com/host/0B_i-IWbNz6vmdUliWUVETDJscWs/zdsf.png');
+			border-style: solid;
+			border-color: #DB1F27;
+			border-width: 15px;
+			margin-left: 10px;
+			margin-top: 665px;
+			
+			position: absolute;
+		}
+      
+       #peoplestory5
+      {font-size:13px;
+        position:absolute;
+        margin-left:150px;
+      margin-top:700px;}
+      
+      #peoplestory51
+      {font-size:13px;
+        position:absolute;
+        margin-left:150px;
+      margin-top:720px;}
+      
+       #peoplestory52
+      {font-size:13px;
+        position:absolute;
+        margin-left:150px;
+      margin-top:744px;
+       color:brown;}
+      
+      
+		#peoplebox6 {
+			width: 90px;
+			height: 120px;
+			background-image:url('https://googledrive.com/host/0B_i-IWbNz6vmdUliWUVETDJscWs/ewfwef.png');
+			border-style: solid;
+			border-color: #DB1F27;
+			border-width: 15px;
+			margin-left: 10px;
+			margin-top: 830px;
+        
+			position: absolute;
+		}
+      
+       #peoplestory6
+      {font-size:13px;
+        position:absolute;
+        margin-left:150px;
+      margin-top:870px;}
+      
+      #peoplestory61
+      {font-size:13px;
+        position:absolute;
+        margin-left:150px;
+      margin-top:890px;
+      }
+      
+      #peoplestory62
+      {font-size:13px;
+        position:absolute;
+        margin-left:150px;
+      margin-top:914px;
+       color:brown;}
+      
+      a:link {text-decoration: none; color:white;}
+      a:visited {text-decoration: none; color:white;}	
+      
+      #super {margin-top:1010px;}
+      
+      #superp {margin-left:10px;
+              font-size:12px;
+              }
+      
+      #pro {margin-top:30px;}
+      
+      .pro {float:left;}
+      
+      .con {margin-left:10px;
+            font-size:13px;}
+      .contwo {margin-left:10px;
+              margin-top:30px;
+              font-size:13px;}
+      .content {margin-left:10px;
+        line-height:100%;
+        font-size:11px;
+      }
+      
+		</style>
+</head>
+<body>
+	<div class="allbox">
+		<div class="all2box">
+			<div class="hotelbox"><img id="big" src="https://googledrive.com/host/0B_i-IWbNz6vmdUliWUVETDJscWs/hotelll.png" alt="big"></div>
+			<div class="menubar">
+				 <div id="fst_menu"><span class="fmenu"><a href="index.html">Main</a></span></div>
+              <div id="snd_menu"><span class="fmenu"><a href="story.html">Story</a></span></div>
+              <div id="trd_menu"><span class="menu"><a href="stillcut.html">StillCut</a></span></div>
+			</div>
+			
+          <h1>Actor</h1>
+				<div id="peoplebox1"></div>
+          <p id="peoplestory1">랄프 파인즈</p>
+          <p id="peoplestory11">Ralph Fiennes</p>
+          <p id="peoplestory12">M. 구스타브 역 </p>
+          
+				<div id="peoplebox2"></div>
+				<p id="peoplestory2">틸다 스윈튼</p>
+          <p id="peoplestory21">Tilda Swinton</p>
+          <p id="peoplestory22">마담 D. 역 </p>
+          
+				<div id="peoplebox3"></div>
+				<p id="peoplestory3">토니 레볼로리</p>
+          <p id="peoplestory31">Tony Revolori</p>
+          <p id="peoplestory32">제로 역 </p>
+			
+			
+				<div id="peoplebox4"></div>
+				<p id="peoplestory4">시얼샤 로넌</p>
+          <p id="peoplestory41">Saoirse Ronan</p>
+          <p id="peoplestory42">아가사 역 </p>
+          
+				<div id="peoplebox5"></div>
+				<p id="peoplestory5">애드리안 브로디</p>
+          <p id="peoplestory51">Adrien Brody</p>
+          <p id="peoplestory52">드미트리 역 </p>
+          
+				<div id="peoplebox6"></div>
+				<p id="peoplestory6">윌렘 대포</p>
+           <p id="peoplestory61">Willem Dafoe</p>
+          <p id="peoplestory62">조플링 역 </p>
+			
+          <h1 id="super">Supervisor</h1>
+          <p id="superp">웨스 앤더슨 Wes Anderson</p> 
+          
+          <h1 id="pro">Production team</h1>
+          <div class="pro">
+            
+            <p class="con">각본</p>
+<p class="content">웨스 앤더슨 Wes Anderson</p> 
+            <p class="content">휴고 기네스 Hugo Guinness</p>  
+            <p class="content">스테판 즈웨이그 Stefan Zweig </p>
+           
+            <p class="contwo">촬영</p>
+            <p class="content">로버트 D. 예먼 Robert D. Yeoman </p> 
+          </div>
+          
+          <div class="pro">
+            <p class="con">제작</p>
+            <p class="content"> 몰리 쿠퍼 Molly Cooper </p>  
+            <p class="content">크리스토프 피셔 Christoph Fisser </p> 
+            <p class="content">헤닝 몰펜터 Henning Molfenter</p>  
+            <p class="content">찰리 워브큰 Charlie Woebcken </p>  
+            <p class="content">제레미 도슨 Jeremy Dawson </p>   
+            <p class="content">스티븐 M. 레일즈 Steven M. Rales</p> 
+            <p class="content">스콧 루딘 Scott Rudin </p>
+            <p class="content">웨스 앤더슨 Wes Anderson <p>
+          </div>
+          
+		</div>
+	</div>
+</body>
+</html>
