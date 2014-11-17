@@ -2,6 +2,18 @@
 <html>
 <head>
 	<title>still cut</title>
+  <script>
+    window.onload=function() {
+      var d=new Date();
+      var h= d.getHours();
+     if (h<12) {
+     document.getElementsByTagName("h1")[0].style.color="#70205B";
+     document.getElementsByClassName("hotelbox")[0].style.backgroundColor="white";
+       alert("호텔의 아침");
+    }
+    else {alert("호텔의 밤");}  
+    }
+  </script>
 	<style>
       *{font-family:malgun gothic;
         line-height:160%;}
