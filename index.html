@@ -2,6 +2,19 @@
 <html>
 <head>
 	<title>index</title>
+  <script>
+    window.onload=function() {
+      var d=new Date();
+      var h= d.getHours();
+     if (h<12) {
+     document.getElementsByTagName("h1")[0].style.color="#70205B";
+     document.getElementsByTagName("h2")[0].style.color="#70205B";
+     document.getElementsByClassName("hotelbox")[0].style.backgroundColor="white";
+       alert("호텔의 아침");
+    }
+    else {alert("호텔의 밤");}  
+    }
+  </script>
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1">
 	<style>
 	
