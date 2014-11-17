@@ -1,44 +1,58 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>casting</title>
-	<style>
+  <title>casting</title>
+  <script>
+    window.onload=function() {
+      var d=new Date();
+      var h= d.getHours();
+     if (h<12) {
+     document.getElementsByTagName("h1")[0].style.color="#70205B";
+       document.getElementsByTagName("h1")[1].style.color="#70205B";
+       document.getElementsByTagName("h1")[2].style.color="#70205B";
+     document.getElementsByClassName("hotelbox")[0].style.backgroundColor="white";
+       alert("호텔의 아침");
+    }
+    else {alert("호텔의 밤");}  
+    }
+  </script>
+  <style>
       *{font-family:malgun gothic;
         line-height:160%;}
       
-		.allbox {
-			width: 1000px;
-			height: 1140px;
-			border-style: solid;
-			border-top-width: 30px;
-			border-bottom-width: 30px;
-			border-right-width: 30px;
-			border-left-width: 30px;
-			border-color: #DB1F27;
-			background-color: #791414;
+    .allbox {
+      width: 1000px;
+      height: 1140px;
+      border-style: solid;
+      border-top-width: 30px;
+      border-bottom-width: 30px;
+      border-right-width: 30px;
+      border-left-width: 30px;
+      border-color: #DB1F27;
+      background-color: #791414;
           margin:auto;
-		}
-		.all2box {
-			width: 970px;
-			height: 1110px;
-			background-color: #f8cae2;
-			margin-left: 15px;
-			margin-top: 15px;
-		}
-		.menubar {
-			width: 100px;
-			height: 300px;
-			background-color: #DB1F27;
-			margin-left: 30px;
-			float: left;
-			position: absolute;
-		}
-		.hotelbox{
-			width: 600px;
-			height: 170px;
-			background-color: black;
-			margin-left: 185px;
-		}
+    }
+    .all2box {
+      width: 970px;
+      height: 1110px;
+      background-color: #f8cae2;
+      margin-left: 15px;
+      margin-top: 15px;
+    }
+    .menubar {
+      width: 100px;
+      height: 300px;
+      background-color: #DB1F27;
+      margin-left: 30px;
+      float: left;
+      position: absolute;
+    }
+    .hotelbox{
+      width: 600px;
+      height: 170px;
+      background-color: black;
+      margin-left: 185px;
+    }
       
       .fmenu {position:absolute;
           margin-left:22px;
@@ -56,51 +70,51 @@
             margin-top:11px;}
       
       
-		#fst_menu {
-			width: 80px;
-			height: 60px;
-			background-color: #791414;
-			margin-left: 7px;
-			margin-top: 10px;
-			border-style: solid;
-			border-color: #DB1F27;
-			border-top-width: 20px;
-		}
-		#snd_menu {
-			width: 80px;
-			height: 60px;
-			background-color: #791414;
-			margin-left: 7px;
-			margin-top: 10px;
-			border-style: solid;
-			border-color: #DB1F27;
-			border-top-width: 28px;
-		}
-		#trd_menu {
-			width: 80px;
-			height: 60px;
-			background-color: #791414;
-			margin-left: 7px;
-			margin-top: 10px;
-			border-style: solid;
-			border-color: #DB1F27;
-			border-top-width: 28px;
-		}
+    #fst_menu {
+      width: 80px;
+      height: 60px;
+      background-color: #791414;
+      margin-left: 7px;
+      margin-top: 10px;
+      border-style: solid;
+      border-color: #DB1F27;
+      border-top-width: 20px;
+    }
+    #snd_menu {
+      width: 80px;
+      height: 60px;
+      background-color: #791414;
+      margin-left: 7px;
+      margin-top: 10px;
+      border-style: solid;
+      border-color: #DB1F27;
+      border-top-width: 28px;
+    }
+    #trd_menu {
+      width: 80px;
+      height: 60px;
+      background-color: #791414;
+      margin-left: 7px;
+      margin-top: 10px;
+      border-style: solid;
+      border-color: #DB1F27;
+      border-top-width: 28px;
+    }
 
          h1 {margin-left:190px;
           color:brown;
           font-size:22px;}
       
-		#peoplebox1 {
-			width: 90px;
-			height: 120px;
-			background-image:url('https://googledrive.com/host/0B_i-IWbNz6vmdUliWUVETDJscWs/one.png');
-			border-style: solid;
-			border-color: #DB1F27;
-			border-width: 15px;
-			margin-left: 185px;
-			margin-top: 10px;
-			
+    #peoplebox1 {
+      width: 90px;
+      height: 120px;
+      background-image:url('https://googledrive.com/host/0B_i-IWbNz6vmdUliWUVETDJscWs/one.png');
+      border-style: solid;
+      border-color: #DB1F27;
+      border-width: 15px;
+      margin-left: 185px;
+      margin-top: 10px;
+      
           position: absolute;}
 
           #peoplestory1
@@ -122,19 +136,19 @@
       margin-top:60px;
        color:brown;}
 
-		
-		#peoplebox2 {
-			width: 90px;
-			height: 120px;
-			background-image:url('https://googledrive.com/host/0B_i-IWbNz6vmdUliWUVETDJscWs/zzz.png');
-			border-style: solid;
-			border-color: #DB1F27;
-			border-width: 15px;
-			margin-left: 420px;
-			margin-top: 10px;
-			
-			position: absolute;
-		}
+    
+    #peoplebox2 {
+      width: 90px;
+      height: 120px;
+      background-image:url('https://googledrive.com/host/0B_i-IWbNz6vmdUliWUVETDJscWs/zzz.png');
+      border-style: solid;
+      border-color: #DB1F27;
+      border-width: 15px;
+      margin-left: 420px;
+      margin-top: 10px;
+      
+      position: absolute;
+    }
       
        #peoplestory2
       {font-size:14px;
@@ -157,18 +171,18 @@
       
       
       
-		#peoplebox3 {
-			width: 90px;
-			height: 120px;
-			background-image:url('https://googledrive.com/host/0B_i-IWbNz6vmdUliWUVETDJscWs/ewfwefw.png');
-			border-style: solid;
-			border-color: #DB1F27;
-			border-width: 15px;
-			margin-left: 665px;
-			margin-top: 10px;
-			
-			position: absolute;
-		}
+    #peoplebox3 {
+      width: 90px;
+      height: 120px;
+      background-image:url('https://googledrive.com/host/0B_i-IWbNz6vmdUliWUVETDJscWs/ewfwefw.png');
+      border-style: solid;
+      border-color: #DB1F27;
+      border-width: 15px;
+      margin-left: 665px;
+      margin-top: 10px;
+      
+      position: absolute;
+    }
       
        #peoplestory3
       {font-size:14px;
@@ -189,18 +203,18 @@
       margin-top:60px;
        color:brown;}
 
-		#peoplebox4 {
-			width: 90px;
-			height: 120px;
-			background-image:url('https://googledrive.com/host/0B_i-IWbNz6vmdUliWUVETDJscWs/fsdfwe.png');
-			border-style: solid;
-			border-color: #DB1F27;
-			border-width: 15px;
-			margin-left: 185px;
-			margin-top: 200px;
+    #peoplebox4 {
+      width: 90px;
+      height: 120px;
+      background-image:url('https://googledrive.com/host/0B_i-IWbNz6vmdUliWUVETDJscWs/fsdfwe.png');
+      border-style: solid;
+      border-color: #DB1F27;
+      border-width: 15px;
+      margin-left: 185px;
+      margin-top: 200px;
 
-			position: absolute;
-		}
+      position: absolute;
+    }
       
        #peoplestory4
       {font-size:14px;
@@ -222,18 +236,18 @@
        color:brown;}
       
       
-		#peoplebox5 {
-			width: 90px;
-			height: 120px;
-			background-image:url('https://googledrive.com/host/0B_i-IWbNz6vmdUliWUVETDJscWs/zdsf.png');
-			border-style: solid;
-			border-color: #DB1F27;
-			border-width: 15px;
-			margin-left: 420px;
-			margin-top: 200px;
-			
-			position: absolute;
-		}
+    #peoplebox5 {
+      width: 90px;
+      height: 120px;
+      background-image:url('https://googledrive.com/host/0B_i-IWbNz6vmdUliWUVETDJscWs/zdsf.png');
+      border-style: solid;
+      border-color: #DB1F27;
+      border-width: 15px;
+      margin-left: 420px;
+      margin-top: 200px;
+      
+      position: absolute;
+    }
       
        #peoplestory5
       {font-size:14px;
@@ -255,18 +269,18 @@
        color:brown;}
       
       
-		#peoplebox6 {
-			width: 90px;
-			height: 120px;
-			background-image:url('https://googledrive.com/host/0B_i-IWbNz6vmdUliWUVETDJscWs/ewfwef.png');
-			border-style: solid;
-			border-color: #DB1F27;
-			border-width: 15px;
-			margin-left: 665px;
-			margin-top: 200px;
+    #peoplebox6 {
+      width: 90px;
+      height: 120px;
+      background-image:url('https://googledrive.com/host/0B_i-IWbNz6vmdUliWUVETDJscWs/ewfwef.png');
+      border-style: solid;
+      border-color: #DB1F27;
+      border-width: 15px;
+      margin-left: 665px;
+      margin-top: 200px;
         
-			position: absolute;
-		}
+      position: absolute;
+    }
       
        #peoplestory6
       {font-size:14px;
@@ -289,7 +303,7 @@
        color:brown;}
       
       a:link {text-decoration: none; color:white;}
-      a:visited {text-decoration: none; color:white;}	
+      a:visited {text-decoration: none; color:white;} 
       
       #super {margin-top:430px;}
       
@@ -312,36 +326,36 @@
           @media screen and (max-width:320px)
         {.allbox
           {width: 290px;
-			height: 1770px;
-			border-style: solid;
-			border-top-width: 15px;
-			border-bottom-width: 15px;
-			border-right-width: 15px;
-			border-left-width: 15px;
-			border-color: #DB1F27;
-			background-color: #791414;
-			}
+      height: 1770px;
+      border-style: solid;
+      border-top-width: 15px;
+      border-bottom-width: 15px;
+      border-right-width: 15px;
+      border-left-width: 15px;
+      border-color: #DB1F27;
+      background-color: #791414;
+      }
           
           .all2box {
-			width: 270px;
-			height:1750px;
-			background-color: #f8cae2;
-			margin-left: 9px;
-			margin-top: 9px;}
+      width: 270px;
+      height:1750px;
+      background-color: #f8cae2;
+      margin-left: 9px;
+      margin-top: 9px;}
           
           .menubar {
-			width: 250px;
-			height: 60px;
-			background-color: #DB1F27;
-			margin-left: 10px;
+      width: 250px;
+      height: 60px;
+      background-color: #DB1F27;
+      margin-left: 10px;
             margin-top:10px;
-			float: left;}
-		
-		.hotelbox{
-			width: 270px;
-			height: 100px;
-			background-color: black;
-			margin-left: 0px;} 
+      float: left;}
+    
+    .hotelbox{
+      width: 270px;
+      height: 100px;
+      background-color: black;
+      margin-left: 0px;} 
           
       .story {margin: 10px;}
       
@@ -357,41 +371,41 @@
         font-size:14px;
               color:white;}
       
-		#fst_menu {
-			width: 60px;
-			height: 40px;
-			background-color: #791414;
-			margin-left: 13px;
-			margin-top: 0px;
-			border-style: solid;
-			border-color: #DB1F27;
-			border-top-width: 10px;
+    #fst_menu {
+      width: 60px;
+      height: 40px;
+      background-color: #791414;
+      margin-left: 13px;
+      margin-top: 0px;
+      border-style: solid;
+      border-color: #DB1F27;
+      border-top-width: 10px;
             position: absolute;
-		}
+    }
           
       #snd_menu {
-			width:60px;
-			height: 40px;
-			background-color: #791414;
-			margin-left: 90px;
-			margin-top: 0px;
-			border-style: solid;
-			border-color: #DB1F27;
-			border-top-width: 10px;
+      width:60px;
+      height: 40px;
+      background-color: #791414;
+      margin-left: 90px;
+      margin-top: 0px;
+      border-style: solid;
+      border-color: #DB1F27;
+      border-top-width: 10px;
             position: absolute;
-		}
+    }
           
-		#trd_menu {
-			width: 60px;
-			height: 40px;
-			background-color: #791414;
-			margin-left: 170px;
-			margin-top: 0px;
-			border-style: solid;
-			border-color: #DB1F27;
-			border-top-width: 10px;
+    #trd_menu {
+      width: 60px;
+      height: 40px;
+      background-color: #791414;
+      margin-left: 170px;
+      margin-top: 0px;
+      border-style: solid;
+      border-color: #DB1F27;
+      border-top-width: 10px;
             position: absolute;
-		}
+    }
       
       #big {width:260px;
             margin-left:5px;
@@ -405,16 +419,16 @@
           color:brown;
           font-size:15px;}
       
-		#peoplebox1 {
-			width: 90px;
-			height: 120px;
-			background-image:url('https://googledrive.com/host/0B_i-IWbNz6vmdUliWUVETDJscWs/one.png');
-			border-style: solid;
-			border-color: #DB1F27;
-			border-width: 15px;
-			margin-left: 10px;
-			margin-top: 5px;
-			
+    #peoplebox1 {
+      width: 90px;
+      height: 120px;
+      background-image:url('https://googledrive.com/host/0B_i-IWbNz6vmdUliWUVETDJscWs/one.png');
+      border-style: solid;
+      border-color: #DB1F27;
+      border-width: 15px;
+      margin-left: 10px;
+      margin-top: 5px;
+      
           position: absolute;}
 
           #peoplestory1
@@ -436,19 +450,19 @@
       margin-top:85px;
        color:brown;}
 
-		
-		#peoplebox2 {
-			width: 90px;
-			height: 120px;
-			background-image:url('https://googledrive.com/host/0B_i-IWbNz6vmdUliWUVETDJscWs/zzz.png');
-			border-style: solid;
-			border-color: #DB1F27;
-			border-width: 15px;
-			margin-left: 10px;
-			margin-top: 170px;
-			
-			position: absolute;
-		}
+    
+    #peoplebox2 {
+      width: 90px;
+      height: 120px;
+      background-image:url('https://googledrive.com/host/0B_i-IWbNz6vmdUliWUVETDJscWs/zzz.png');
+      border-style: solid;
+      border-color: #DB1F27;
+      border-width: 15px;
+      margin-left: 10px;
+      margin-top: 170px;
+      
+      position: absolute;
+    }
       
        #peoplestory2
       {font-size:13px;
@@ -471,18 +485,18 @@
       
       
       
-		#peoplebox3 {
-			width: 90px;
-			height: 120px;
-			background-image:url('https://googledrive.com/host/0B_i-IWbNz6vmdUliWUVETDJscWs/ewfwefw.png');
-			border-style: solid;
-			border-color: #DB1F27;
-			border-width: 15px;
-			margin-left: 10px;
-			margin-top: 335px;
-			
-			position: absolute;
-		}
+    #peoplebox3 {
+      width: 90px;
+      height: 120px;
+      background-image:url('https://googledrive.com/host/0B_i-IWbNz6vmdUliWUVETDJscWs/ewfwefw.png');
+      border-style: solid;
+      border-color: #DB1F27;
+      border-width: 15px;
+      margin-left: 10px;
+      margin-top: 335px;
+      
+      position: absolute;
+    }
       
        #peoplestory3
       {font-size:13px;
@@ -503,18 +517,18 @@
       margin-top:418px;
        color:brown;}
 
-		#peoplebox4 {
-			width: 90px;
-			height: 120px;
-			background-image:url('https://googledrive.com/host/0B_i-IWbNz6vmdUliWUVETDJscWs/fsdfwe.png');
-			border-style: solid;
-			border-color: #DB1F27;
-			border-width: 15px;
-			margin-left: 10px;
-			margin-top: 500px;
+    #peoplebox4 {
+      width: 90px;
+      height: 120px;
+      background-image:url('https://googledrive.com/host/0B_i-IWbNz6vmdUliWUVETDJscWs/fsdfwe.png');
+      border-style: solid;
+      border-color: #DB1F27;
+      border-width: 15px;
+      margin-left: 10px;
+      margin-top: 500px;
 
-			position: absolute;
-		}
+      position: absolute;
+    }
       
        #peoplestory4
       {font-size:13px;
@@ -536,18 +550,18 @@
        color:brown;}
       
       
-		#peoplebox5 {
-			width: 90px;
-			height: 120px;
-			background-image:url('https://googledrive.com/host/0B_i-IWbNz6vmdUliWUVETDJscWs/zdsf.png');
-			border-style: solid;
-			border-color: #DB1F27;
-			border-width: 15px;
-			margin-left: 10px;
-			margin-top: 665px;
-			
-			position: absolute;
-		}
+    #peoplebox5 {
+      width: 90px;
+      height: 120px;
+      background-image:url('https://googledrive.com/host/0B_i-IWbNz6vmdUliWUVETDJscWs/zdsf.png');
+      border-style: solid;
+      border-color: #DB1F27;
+      border-width: 15px;
+      margin-left: 10px;
+      margin-top: 665px;
+      
+      position: absolute;
+    }
       
        #peoplestory5
       {font-size:13px;
@@ -569,18 +583,18 @@
        color:brown;}
       
       
-		#peoplebox6 {
-			width: 90px;
-			height: 120px;
-			background-image:url('https://googledrive.com/host/0B_i-IWbNz6vmdUliWUVETDJscWs/ewfwef.png');
-			border-style: solid;
-			border-color: #DB1F27;
-			border-width: 15px;
-			margin-left: 10px;
-			margin-top: 830px;
+    #peoplebox6 {
+      width: 90px;
+      height: 120px;
+      background-image:url('https://googledrive.com/host/0B_i-IWbNz6vmdUliWUVETDJscWs/ewfwef.png');
+      border-style: solid;
+      border-color: #DB1F27;
+      border-width: 15px;
+      margin-left: 10px;
+      margin-top: 830px;
         
-			position: absolute;
-		}
+      position: absolute;
+    }
       
        #peoplestory6
       {font-size:13px;
@@ -603,7 +617,7 @@
        color:brown;}
       
       a:link {text-decoration: none; color:white;}
-      a:visited {text-decoration: none; color:white;}	
+      a:visited {text-decoration: none; color:white;} 
       
       #super {margin-top:1010px;}
       
@@ -625,50 +639,50 @@
         font-size:11px;
       }
       
-		</style>
+    </style>
 </head>
 <body>
-	<div class="allbox">
-		<div class="all2box">
-			<div class="hotelbox"><img id="big" src="https://googledrive.com/host/0B_i-IWbNz6vmdUliWUVETDJscWs/hotelll.png" alt="big"></div>
-			<div class="menubar">
-				 <div id="fst_menu"><span class="fmenu"><a href="index.html">Main</a></span></div>
+  <div class="allbox">
+    <div class="all2box">
+      <div class="hotelbox"><img id="big" src="https://googledrive.com/host/0B_i-IWbNz6vmdUliWUVETDJscWs/hotelll.png" alt="big"></div>
+      <div class="menubar">
+         <div id="fst_menu"><span class="fmenu"><a href="index.html">Main</a></span></div>
               <div id="snd_menu"><span class="fmenu"><a href="story.html">Story</a></span></div>
               <div id="trd_menu"><span class="menu"><a href="stillcut.html">StillCut</a></span></div>
-			</div>
-			
+      </div>
+      
           <h1>Actor</h1>
-				<div id="peoplebox1"></div>
+        <div id="peoplebox1"></div>
           <p id="peoplestory1">랄프 파인즈</p>
           <p id="peoplestory11">Ralph Fiennes</p>
           <p id="peoplestory12">M. 구스타브 역 </p>
           
-				<div id="peoplebox2"></div>
-				<p id="peoplestory2">틸다 스윈튼</p>
+        <div id="peoplebox2"></div>
+        <p id="peoplestory2">틸다 스윈튼</p>
           <p id="peoplestory21">Tilda Swinton</p>
           <p id="peoplestory22">마담 D. 역 </p>
           
-				<div id="peoplebox3"></div>
-				<p id="peoplestory3">토니 레볼로리</p>
+        <div id="peoplebox3"></div>
+        <p id="peoplestory3">토니 레볼로리</p>
           <p id="peoplestory31">Tony Revolori</p>
           <p id="peoplestory32">제로 역 </p>
-			
-			
-				<div id="peoplebox4"></div>
-				<p id="peoplestory4">시얼샤 로넌</p>
+      
+      
+        <div id="peoplebox4"></div>
+        <p id="peoplestory4">시얼샤 로넌</p>
           <p id="peoplestory41">Saoirse Ronan</p>
           <p id="peoplestory42">아가사 역 </p>
           
-				<div id="peoplebox5"></div>
-				<p id="peoplestory5">애드리안 브로디</p>
+        <div id="peoplebox5"></div>
+        <p id="peoplestory5">애드리안 브로디</p>
           <p id="peoplestory51">Adrien Brody</p>
           <p id="peoplestory52">드미트리 역 </p>
           
-				<div id="peoplebox6"></div>
-				<p id="peoplestory6">윌렘 대포</p>
+        <div id="peoplebox6"></div>
+        <p id="peoplestory6">윌렘 대포</p>
            <p id="peoplestory61">Willem Dafoe</p>
           <p id="peoplestory62">조플링 역 </p>
-			
+      
           <h1 id="super">Supervisor</h1>
           <p id="superp">웨스 앤더슨 Wes Anderson</p> 
           
@@ -696,7 +710,7 @@
             <p class="content">웨스 앤더슨 Wes Anderson <p>
           </div>
           
-		</div>
-	</div>
+    </div>
+  </div>
 </body>
 </html>
