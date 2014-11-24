@@ -15,8 +15,20 @@
     }
     else {alert("호텔의 밤");}  
     }
+    
+    function changeImage() {
+
+        if  (document.getElementById("imgClickAndChange").src == "https://googledrive.com/host/0B_i-IWbNz6vmdUliWUVETDJscWs/hotelll.png")
+        {
+            document.getElementById("imgClickAndChange").src = "https://googledrive.com/host/0B_i-IWbNz6vmdUliWUVETDJscWs/hotelImg2_m.jpg";
+        }
+        else 
+        {
+            document.getElementById("imgClickAndChange").src = "https://googledrive.com/host/0B_i-IWbNz6vmdUliWUVETDJscWs/hotelll.png";
+        }
+
+    }
   </script>
-  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1">
   <style>
       *{font-family:malgun gothic;
         line-height:160%;}
@@ -66,7 +78,7 @@
           margin-top:15px;
               color:white;}
       
-        #big {width:510px;
+        #imgClickAndChange {width:510px;
             margin-left:45px;
             margin-top:11px;}
       
@@ -408,7 +420,7 @@
             position: absolute;
     }
       
-      #big {width:260px;
+      #imgClickAndChange {width:260px;
             margin-left:5px;
             margin-top:13px;}
           
@@ -645,7 +657,7 @@
 <body>
   <div class="allbox">
     <div class="all2box">
-      <div class="hotelbox"><img id="big" src="https://googledrive.com/host/0B_i-IWbNz6vmdUliWUVETDJscWs/hotelll.png" alt="big"></div>
+      <div class="hotelbox"><img id="imgClickAndChange" src="https://googledrive.com/host/0B_i-IWbNz6vmdUliWUVETDJscWs/hotelll.png" alt="big" onclick="changeImage()"/></div>
       <div class="menubar">
          <div id="fst_menu"><span class="fmenu"><a href="index.html">Main</a></span></div>
               <div id="snd_menu"><span class="fmenu"><a href="story.html">Story</a></span></div>
