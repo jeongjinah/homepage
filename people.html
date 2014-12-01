@@ -10,18 +10,22 @@
      document.getElementsByTagName("h1")[0].style.color="#70205B";
      document.getElementsByTagName("h2")[0].style.color="#70205B";
      document.getElementsByClassName("hotelbox")[0].style.backgroundColor="white";
+       alert("호텔의 아침");
     }
    
      else if (h<19){
        document.getElementsByClassName("hotelbox")[0].style.backgroundColor="#FF6986";
-     } 
+       alert("호텔의 낮");
+     }
+      
+      
+    else {alert("호텔의 밤");}  
     }
-    
-    function changeImage() {
 
+    function changeImage() {
         if  (document.getElementById("imgClickAndChange").src == "https://googledrive.com/host/0B_i-IWbNz6vmdUliWUVETDJscWs/hotelll.png")
         {
-            document.getElementById("imgClickAndChange").src = "https://googledrive.com/host/0B_i-IWbNz6vmdUliWUVETDJscWs/hotelImg2_m.jpg";
+            document.getElementById("imgClickAndChange").src = "https://googledrive.com/host/0B_i-IWbNz6vmdUliWUVETDJscWs/hotelImg1.png";
         }
         else 
         {
@@ -79,7 +83,16 @@ document.onmousemove=followmouse
 if (displayduration>0)
 setTimeout("hidetrail()", displayduration*1000)
   </script>
+
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1">
   <style>
+
+@media print {
+        h1 {
+        font-size: 20pt;
+        }
+    }
+
       *{font-family:malgun gothic;
         line-height:160%;}
  
