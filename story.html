@@ -3,26 +3,29 @@
 <head>
 	<title>story</title>
    <script>
-    window.onload=function() {
+     window.onload=function() {
       var d=new Date();
       var h= d.getHours();
      if (h<12) {
      document.getElementsByTagName("h1")[0].style.color="#70205B";
      document.getElementsByTagName("h2")[0].style.color="#70205B";
      document.getElementsByClassName("hotelbox")[0].style.backgroundColor="white";
+       alert("호텔의 아침");
     }
    
      else if (h<19){
        document.getElementsByClassName("hotelbox")[0].style.backgroundColor="#FF6986";
-     } 
+       alert("호텔의 낮");
+     }
+      
+      
+    else {alert("호텔의 밤");}  
     }
-    
-    function changeImage() {
 
-//its checking C:\Users\ws21\Desktop\imgs\right.gif=="imgs\left.gif"
+    function changeImage() {
         if  (document.getElementById("imgClickAndChange").src == "https://googledrive.com/host/0B_i-IWbNz6vmdUliWUVETDJscWs/hotelll.png")
         {
-            document.getElementById("imgClickAndChange").src = "https://googledrive.com/host/0B_i-IWbNz6vmdUliWUVETDJscWs/hotelImg3_m.jpg";
+            document.getElementById("imgClickAndChange").src = "https://googledrive.com/host/0B_i-IWbNz6vmdUliWUVETDJscWs/hotelImg1.png";
         }
         else 
         {
@@ -80,7 +83,16 @@ document.onmousemove=followmouse
 if (displayduration>0)
 setTimeout("hidetrail()", displayduration*1000)
   </script>
+
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1">
 	<style>
+
+@media print {
+        #title {
+        font-size: 12pt;
+        }
+    }
+
       *{font-family:malgun gothic;
         line-height:160%;}
 		.allbox {
